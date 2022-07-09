@@ -1,18 +1,16 @@
 "C:\Users\usuario\OneDrive\Documents\Unreal Projects\TestProject\Source\TestProject\TestProject.cpp"
 /I .
-/I "C:\Users\usuario\OneDrive\Documents\Unreal Projects\TestProject\Intermediate\Build\Win64\UnrealEditor\Inc\TestProject"
-/I "C:\Users\usuario\OneDrive\Documents\Unreal Projects\TestProject\Source"
-/I Runtime
-/I Runtime\TraceLog\Public
-/I Runtime\Core\Public
-/I ..\Intermediate\Build\Win64\UnrealEditor\Inc\CoreUObject
-/I Runtime\CoreUObject\Public
 /I ..\Intermediate\Build\Win64\UnrealEditor\Inc\Engine
+/I Runtime
 /I ..\Shaders\Shared
 /I Runtime\Engine\Classes
 /I Runtime\Engine\Public
+/I Runtime\TraceLog\Public
+/I Runtime\Core\Public
 /I ..\Intermediate\Build\Win64\UnrealEditor\Inc\CoreOnline
 /I Runtime\CoreOnline\Public
+/I ..\Intermediate\Build\Win64\UnrealEditor\Inc\CoreUObject
+/I Runtime\CoreUObject\Public
 /I ..\Intermediate\Build\Win64\UnrealEditor\Inc\NetCore
 /I Runtime\Net
 /I Runtime\Net\Core\Classes
@@ -253,6 +251,8 @@
 /I Runtime\ClothingSystemRuntimeInterface\Public
 /I ..\Intermediate\Build\Win64\UnrealEditor\Inc\AnimationDataController
 /I Developer\AnimationDataController\Public
+/I "C:\Users\usuario\OneDrive\Documents\Unreal Projects\TestProject\Intermediate\Build\Win64\UnrealEditor\Inc\TestProject"
+/I "C:\Users\usuario\OneDrive\Documents\Unreal Projects\TestProject\Source"
 /I ThirdParty\mimalloc\include
 /I ThirdParty\LibTiff\Source\Win64
 /I ThirdParty\LibTiff\Source

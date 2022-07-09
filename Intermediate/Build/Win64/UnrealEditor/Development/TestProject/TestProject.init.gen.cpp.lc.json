@@ -1,0 +1,13 @@
+{
+    "Version": "1.1",
+    "Data": {
+        "Source": "c:\\users\\usuario\\onedrive\\documents\\unreal projects\\testproject\\intermediate\\build\\win64\\unrealeditor\\inc\\testproject\\testproject.init.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\usuario\\onedrive\\documents\\unreal projects\\testproject\\intermediate\\build\\win64\\testprojecteditor\\development\\engine\\sharedpch.engine.shadowerrors.h.pch",
+        "Includes": [
+            "c:\\users\\usuario\\onedrive\\documents\\unreal projects\\testproject\\intermediate\\build\\win64\\unrealeditor\\development\\testproject\\definitions.testproject.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
