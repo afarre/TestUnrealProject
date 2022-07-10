@@ -24,7 +24,10 @@ void AMyCharacter::BeginPlay()
 	Super::BeginPlay();
 
 	isJumping = false;
+	isSprinting = false;
 	
+	characterMovementComponent = GetCharacterMovement();
+	characterMovementComponent->MaxWalkSpeed = 1000.0f;
 }
 
 // Called every frame
@@ -47,6 +50,8 @@ void AMyCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompone
 	
 	// Bind Actions
 	InputComponent->BindAction("Jump", IE_Pressed, this, &AMyCharacter::JumpAction);
+	InputComponent->BindAction("Sprint", IE_Pressed, this, &AMyCharacter::Sprint);
+	InputComponent->BindAction("Sprint", IE_Released, this, &AMyCharacter::Sprint);
 }
 
 void AMyCharacter::JumpAction() {
@@ -83,4 +88,15 @@ void AMyCharacter::VerticalMove(float value) {
 	if (value) {
 		AddMovementInput(GetActorForwardVector(), value);
 	}
+}
+
+void AMyCharacter::Sprint() {
+	if (!isSprinting) {
+		UE_LOG(LogTemp, Warning, TEXT("sprint ON"));
+		characterMovementComponent->MaxWalkSpeed = 2000.0f;
+	} else {
+		UE_LOG(LogTemp, Warning, TEXT("sprint OFF"));
+		characterMovementComponent->MaxWalkSpeed = 1000.0f;
+	}
+	isSprinting = !isSprinting;
 }

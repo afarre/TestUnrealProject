@@ -6,6 +6,7 @@
 #include "Components/InputComponent.h"
 #include "Camera/CameraComponent.h"
 #include "GameFramework/Character.h"
+#include "GameFramework/CharacterMovementComponent.h"
 #include "MyCharacter.generated.h"
 
 UCLASS()
@@ -34,10 +35,17 @@ private:
 	void HorizontalRotation(float value);
 	void VerticalRotation(float value);
 	void JumpAction();
+	void Sprint();
 
 	UPROPERTY(EditAnywhere, Category = "Camera")
 		UCameraComponent* camera;
+	
+	UPROPERTY(VisibleDefaultsOnly)
+		UCharacterMovementComponent* characterMovementComponent;
 
 	UPROPERTY()
 		bool isJumping;
+
+	UPROPERTY()
+		bool isSprinting;
 };
